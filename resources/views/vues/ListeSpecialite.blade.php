@@ -23,9 +23,9 @@
         @endforeach
         </tbody>
     </table>
-            <form method="post" action="">
+            <form method="post" action="{{url('/ListeSpecialite')}}">
                 <input type="hidden" name="idPraticien" value="{{$idpraticien}}">
-
+                @csrf
                 <select name="listeAjout">
                     <option value="">Ajouter une spécialité</option>
 
