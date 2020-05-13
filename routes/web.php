@@ -30,6 +30,6 @@ Route::get('/supprimer/{idpraticien}/{idspecialite}',"PraticiensController@suppr
 Route::get('/modifier/{idpraticien}/{idspecialite}',"PraticiensController@modifierSpecialite");
 Route::post('/modifier', "PraticiensController@validModif");
 
-Route::get('/ListeSpecialite','PraticiensController@addSpecialitePrat');
+Route::post('/ListeSpecialite','PraticiensController@addSpecialitePrat');
 
 
