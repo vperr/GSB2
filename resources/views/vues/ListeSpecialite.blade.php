@@ -24,7 +24,7 @@
         </tbody>
     </table>
             <form method="post" action="">
-                <input type="hidden" name="{{$idpraticien}}">
+                <input type="hidden" name="idPraticien" value="{{$idpraticien}}">
 
                 <select name="listeAjout">
                     <option value="">Ajouter une spécialité</option>
