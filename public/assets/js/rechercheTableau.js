@@ -2,6 +2,8 @@
 function rechercheInput() {
     // Déclaration des variables
     var input, filter, table, tr, td, cell, i, j;
+    //(Bastien) Déclaration de la variable du nombre de praticien
+    var nbrPraticien = 0;
     // Récupération de la valeur de l'input
     input = document.getElementById("myInput");
     // On met cette valeur en majuscule
@@ -25,6 +27,7 @@ function rechercheInput() {
             if (cell) {
                 // On met ses informations en majuscule et on vérifie si elle correspond à l'entrée de l'input
                 if (cell.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    nbrPraticien += 1;
                     // Si ouin on l'affiche
                     tr[i].style.display = "";
                     // Et on sort de la boucle
@@ -33,6 +36,7 @@ function rechercheInput() {
             }
         }
     }
+    document.getElementById("nbrPraticien").innerHTML = nbrPraticien;
 }
 // Fonction pour la recherche par la liste déroulante
 function rechercheSelect() {
