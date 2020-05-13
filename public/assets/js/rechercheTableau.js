@@ -43,6 +43,7 @@ function rechercheInput() {
 function rechercheSelect() {
     // Déclaration des variables
     var select, table, tr, td, i;
+    var nbrPraticien = 0;
     // Récupération de la valeur de la liste déroulante qu'on met en majuscule
     select = document.getElementById("mySelect").value.toUpperCase();
     // On récupère le tableau
@@ -64,10 +65,13 @@ function rechercheSelect() {
             if (td.innerHTML.toUpperCase().indexOf(select) > -1) {
                 // Si oui, on l'affiche
                 tr[i].style.display = "";
+                nbrPraticien += 1;
             } else {
                 // Sinon, on ne l'affiche pas
                 tr[i].style.display = "none";
             }
         }
     }
+    document.getElementById("nbrPraticien").innerHTML = nbrPraticien;
+    console.log(nbrPraticien);
 }
