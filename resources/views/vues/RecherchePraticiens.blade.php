@@ -6,7 +6,7 @@
 
             <h1 class="titreRecherche">Recherche d'un praticien</h1>
 
-            <h3 class="libellé">Nombre de praticiens : {{ $mesPraticiens->Count()}}</h3>
+            <h3 class="libellé">Nombre de praticiens : <span id="nbrPraticien"></span></h3>
             <!-- Zone de recherche
                  IMPORTANT : ne pas oublier l'id qui permettent à la fonction de trouver l'input et l'onkeyup d'appeler la fonction
             -->
