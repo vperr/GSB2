@@ -37,6 +37,7 @@ function rechercheInput() {
         }
     }
     document.getElementById("nbrPraticien").innerHTML = nbrPraticien;
+    console.log(nbrPraticien);
 }
 // Fonction pour la recherche par la liste déroulante
 function rechercheSelect() {
