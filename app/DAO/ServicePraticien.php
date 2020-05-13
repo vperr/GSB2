@@ -12,7 +12,6 @@ class ServicePraticien
 
     public function  getListePraticiens() {
         $mesPraticiens = DB::table('praticien')
-            ->join('posseder', 'praticien.id_praticien', '=', 'posseder.id_praticien')
             ->Join('type_praticien', 'type_praticien.id_type_praticien', '=', 'praticien.id_type_praticien')
             ->get();
 
