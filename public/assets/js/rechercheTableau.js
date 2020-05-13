@@ -1,5 +1,6 @@
 // Fonction pour la recherche par l'input
 function rechercheInput() {
+    console.log("seeexe");
     // Déclaration des variables
     var input, filter, table, tr, td, cell, i, j;
     //(Bastien) Déclaration de la variable du nombre de praticien
