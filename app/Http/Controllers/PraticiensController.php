@@ -24,7 +24,11 @@ class PraticiensController extends Controller
     public function addSpecialitePrat(Request $request)
     {
         try {
+            $idSpecialite = $request->input('listeAjout');
+            $isPraticien = $request->input('idPraticien');
             $unPrat = new ServicePraticien();
+            $unPrat->AjoutSpecialite($isPraticien, $idSpecialite);
+            return redirect("ListeSpecialite/$isPraticien");
 
         } catch (MonException $e) {
             $erreur = $e->getMessage();
